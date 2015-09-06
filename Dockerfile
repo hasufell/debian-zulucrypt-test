@@ -16,7 +16,7 @@ RUN export LANGUAGE=en_US.UTF-8 && \
 	locale-gen en_US.UTF-8 && \
 	dpkg-reconfigure locales
 
-# install pnmixer dependencies
+# install zulucrypt dependencies
 RUN apt-get update && \
 	apt-get install --allow-unauthenticated -y libblkid-dev libqt4-dev gcc g++ \
 	libcryptsetup-dev cmake libgcrypt11-dev pkg-config libdevmapper-dev \
